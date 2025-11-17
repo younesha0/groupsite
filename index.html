@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Main Page</title>
+
+<!-- Internal CSS -->
+<style>
+    body{
+        margin:0;
+        font-family: Arial;
+        background:#f0f0f0;
+    }
+    header{
+        background:#333;
+        color:white;
+        padding:15px;
+        text-align:center;
+    }
+    nav{
+        text-align:center;
+        background:#555;
+        padding:10px;
+    }
+    nav a{
+        color:white;
+        margin:0 15px;
+        text-decoration:none;
+        font-weight:bold;
+    }
+    nav a:hover{
+        color:yellow;
+    }
+    .content{
+        padding:30px;
+        text-align:center;
+    }
+    button{
+        padding:10px 20px;
+        font-size:16px;
+        cursor:pointer;
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="content">
+    <h2>Main Page</h2>
+    <p>This is the main page of this simple website.</p>
+    <button onclick="showMessage()">Click Me</button>
+</div>
+
+<!-- Internal JavaScript -->
+<script>
+    function showMessage(){
+        alert("Hello! Thanks for visiting the main page.");
+    }
+</script>
+
+</body>
+</html>
